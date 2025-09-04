@@ -1,0 +1,65 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net472</TargetFramework>
+        <AssemblyName>noctsol.moarexperience</AssemblyName>
+        <Product>moarexperience</Product>
+        <Version>0.9.0</Version>
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+        <LangVersion>latest</LangVersion>
+        <RestoreAdditionalProjectSources>
+            https://api.nuget.org/v3/index.json;
+            https://nuget.bepinex.dev/v3/index.json;
+            https://nuget.samboy.dev/v3/index.json
+        </RestoreAdditionalProjectSources>
+        <RootNamespace>ExperienceMultiplier</RootNamespace>
+        <Nullable>enable</Nullable>
+        <ElinDir>D:\SteamLibrary\steamapps\common\Elin</ElinDir>
+        <ElinManaged>$(ElinDir)\Elin_Data\Managed</ElinManaged>
+        <bepinexppath>$(ElinDir)\BepInEx\core</bepinexppath>
+
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="BepInEx.Analyzers" Version="1.*" PrivateAssets="all"/>
+        <PackageReference Include="BepInEx.PluginInfoProps" Version="2.*"/>
+        <PackageReference Include="UnityEngine.Modules" Version="2021.3.34" IncludeAssets="compile"/>
+    </ItemGroup>
+
+    <ItemGroup Condition="'$(TargetFramework.TrimEnd(`0123456789`))' == 'net'">
+        <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.3" PrivateAssets="all" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <Reference Include="0Harmony">
+          <HintPath>$(bepinexppath)\0Harmony.dll</HintPath>
+        </Reference>
+        <Reference Include="BepInEx.Core">
+          <HintPath>$(bepinexppath)\BepInEx.Core.dll</HintPath>
+        </Reference>
+        <Reference Include="BepInEx.Unity">
+            <HintPath>$(bepinexppath)\BepInEx.Unity.dll</HintPath>
+        </Reference>
+        <Reference Include="Elin">
+            <HintPath>$(ElinManaged)\Elin.dll</HintPath>
+        </Reference>
+        <Reference Include="Plugins.BaseCore">
+            <HintPath>$(ElinManaged)\Plugins.BaseCore.dll</HintPath>
+        </Reference>
+        <Reference Include="Plugins.UI">
+          <HintPath>$(ElinManaged)\Plugins.UI.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.UI">
+          <HintPath>$(ElinManaged)\UnityEngine.UI.dll</HintPath>
+        </Reference>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Remove="UISettingsWindow.cs" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="SteamDescription.txt" />
+      <None Remove=".gitignore" />
+    </ItemGroup>
+</Project>
