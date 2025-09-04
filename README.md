@@ -17,6 +17,10 @@ What originally broke the original mod was that the ModExp function changed from
     - Look for "ModExp"
     - If it doesn't exist, prepare to spend a lot of time digging and writing entirely new code
 
+- write directions
+- set up links to original
+- attach original
+
 
 # Guide for running this locally
 ## Option 1 - Drop it in the package directory
