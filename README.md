@@ -24,7 +24,7 @@ What originally broke the original mod was that the ModExp function changed from
 2. Paste the dll in D:\SteamLibrary\steamapps\common\Elin\BepInEx\plugins
 4. Run the game once and a config file will get generated
 5. Close the game
-6. Edit the file
+6. Edit the `SteamLibrary\steamapps\common\Elin\BepInEx\config\noctsol.reasonableexp.cfg` file
 7. Run the game - things should work now
 
 # Guide for running this locally
