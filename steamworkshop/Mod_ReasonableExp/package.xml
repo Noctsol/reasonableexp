@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Meta>
+  <title>ReasonableExp</title>
+  <id>noctsol.elingame.reasonableexp</id>
+  <author>Noctsol</author>
+  <loadPriority>100</loadPriority>
+  <version>0.9.0</version>
+  <tags>QoL,Balance</tags>
+  <description>
+    ﻿Multiplier for experience and potential gain.
+
+    [h3]How to configure[/h3]
+    The configuration file will be generated after the game is launched.
+    Close the game and edit the settings file, which is located at:
+    [i]/steamapps/common/Elin/BepInEx/config/noctsol.reasonableexp.cfg[/i]
+  </description>
+  <builtin>false</builtin>
+</Meta>
