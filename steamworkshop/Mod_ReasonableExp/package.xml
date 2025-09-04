@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Meta>
-  <title>moarexp</title>
-  <id>noctsol.elingame.moarexp</id>
+  <title>ReasonableExp</title>
+  <id>noctsol.elingame.reasonableexp</id>
   <author>Noctsol</author>
   <loadPriority>100</loadPriority>
   <version>0.9.0</version>
