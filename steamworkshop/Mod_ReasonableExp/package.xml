@@ -12,7 +12,7 @@
     [h3]How to configure[/h3]
     The configuration file will be generated after the game is launched.
     Close the game and edit the settings file, which is located at:
-    [i]/steamapps/common/Elin/BepInEx/config/hvits3rk.experiencemultiplier.cfg[/i]
+    [i]/steamapps/common/Elin/BepInEx/config/noctsol.reasonableexp.cfg[/i]
   </description>
   <builtin>false</builtin>
 </Meta>
